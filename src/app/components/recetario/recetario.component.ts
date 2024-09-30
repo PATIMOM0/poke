@@ -26,7 +26,7 @@ export class RecetarioComponent {
 
   recetas:  Receta[] = [
     {
-      titulo: 'Pasta al Pesto',
+      titulo: 'Spagetti',
       descripcion: 'Una deliciosa pasta con salsa pesto casera',
       ingredientes: ['500g de pasta', '2 tazas de albahaca fresca', '1/2 taza de piñones', '2 dientes de ajo', '1/2 taza de aceite de oliva', 'Sal y pimienta al gusto'],
       pasos: [

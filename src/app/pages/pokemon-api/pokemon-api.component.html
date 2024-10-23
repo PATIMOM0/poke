@@ -3,13 +3,33 @@
     <!-- Nombre columna -->
     <ng-container matColumnDef="name">
       <th mat-header-cell *matHeaderCellDef> Nombre </th>
-      <td mat-cell *matCellDef="let pokemon"> {{pokemon.name}} </td>
+      <td mat-cell *matCellDef="let pokemon"> {{ pokemon.name }} </td>
+    </ng-container>
+
+    <!-- Imagen columna -->
+    <ng-container matColumnDef="image">
+      <th mat-header-cell *matHeaderCellDef> Imagen </th>
+      <td mat-cell *matCellDef="let pokemon">
+        <img [src]="pokemon.image" alt="{{ pokemon.name }}" width="50" />
+      </td>
+    </ng-container>
+
+    <!-- Altura columna -->
+    <ng-container matColumnDef="height">
+      <th mat-header-cell *matHeaderCellDef> Altura </th>
+      <td mat-cell *matCellDef="let pokemon"> {{ pokemon.height }} </td>
+    </ng-container>
+
+    <!-- Peso columna -->
+    <ng-container matColumnDef="weight">
+      <th mat-header-cell *matHeaderCellDef> Peso </th>
+      <td mat-cell *matCellDef="let pokemon"> {{ pokemon.weight }} </td>
     </ng-container>
 
     <!-- URL columna -->
     <ng-container matColumnDef="url">
       <th mat-header-cell *matHeaderCellDef> URL </th>
-      <td mat-cell *matCellDef="let pokemon"> {{pokemon.url}} </td>
+      <td mat-cell *matCellDef="let pokemon"> {{ pokemon.url }} </td>
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

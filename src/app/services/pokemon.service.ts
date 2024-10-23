@@ -13,4 +13,8 @@ export class PokemonService {
   getPokemonList(limit: number = 10): Observable<any> {
     return this.http.get<any>(`${this.baseUrl}?limit=${limit}`);
   }
+
+  getPokemonDetails(name: string): Observable<any> {
+    return this.http.get<any>(`${this.baseUrl}/${name}`);
+  }
 }
